@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permintaan Maaf dan Balikan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            max-width: 400px;
+        }
+
+        .bird {
+            margin-top: 20px;
+            position: relative;
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+            animation: fly 3s infinite ease-in-out;
+        }
+
+        .bird img {
+            width: 100%;
+            animation: wing-flap 1s infinite ease-in-out;
+        }
+
+        .love {
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: swing 2s infinite ease-in-out;
+        }
+
+        .love img {
+            width: 40px;
+        }
+
+        @keyframes fly {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes wing-flap {
+            0%, 100% { transform: rotate(0); }
+            50% { transform: rotate(-10deg); }
+        }
+
+        @keyframes swing {
+            0%, 100% { transform: translateX(-50%) rotate(0); }
+            50% { transform: translateX(-50%) rotate(10deg); }
+        }
+
+        .text {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .text strong {
+            color: #e63946;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Hai Cantik...</h1>
+        <p class="text">Arip sadar sudah banyak salah. Bisakah kita mulai lagi? Aku masih sangat <strong>sayang</strong> sama alifah ❤️</p>
+        <div class="bird">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/White_bird_flying.png" alt="Burung">
+            <div class="love">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Red_Heart.png" alt="Love">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
